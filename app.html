@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+    <h1 id="title">visualize data with a heat maph</h1>
+  <h4 id="description" x="250" y="20">Temperature form 1960 to 2015 Average is 8.66</h4>
+<svg id="canvas">
+ </svg>
+<svg id="legend">
+  <g>
+    <rect x="10" y="0" width="40" height="40" fill="SteelBlue"></rect>
+    <text x="60" y="20" fill="black">Variance of -2 or less</text>
+  </g>
+  <g>
+    <rect x="10" y="40" width="40" height="40" fill="LightSteelBlue"></rect>
+    <text x="60" y="60" fill="black">Variance of -1 or less</text>
+  </g>
+  <g>
+    <rect x="10" y="80" width="40" height="40" fill="orange"></rect>
+    <text x="60" y="100" fill="black">Variance Above Avarge</text>
+  </g>
+  <g>
+    <rect x="10" y="120" width="40" height="40" fill="Crimson"></rect>
+    <text x="60" y="140" fill="black">Variance of +1 or less</text>
+  </g>
+  
+</svg>
+<div id="tooltip"></div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
