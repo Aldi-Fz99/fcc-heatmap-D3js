@@ -1,0 +1,21 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg{
+  background-color: whitesmoke;
+}
+#tooltip{
+  visibililty: hidden;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 12px;
+  pointer-events: none;
+}
